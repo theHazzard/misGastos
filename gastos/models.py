@@ -9,4 +9,4 @@ class Gasto(models.Model):
 	usuario = models.ForeignKey(User)
 	fecha = models.DateTimeField()
 	tipoid = models.ForeignKey(Tipo)
-	monto = models.DecimalField()
+	monto = models.DecimalField(max_digits=9, decimal_places=2)
